@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --body-color: #000;
+    --black-light: #121212;
+    --gray-dark: #313030;
+    --green: #1ed760;
+    --white: #fff;
+
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--gray-dark);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #222;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--body-color);
+    color: var(--white);
+}
+
+.bg-light {
+    background-color: var(--black-light);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.m-1 {
+    margin: 0.5rem;
+}
+
+.m-2 {
+    margin: 1rem;
+}
+
+.p-1 {
+    padding: 0.5rem;
+}
+
+.p-2 {
+    padding: 1rem;
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    gap: 5px;
+}
+
+.left, .right {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 75%;
+}
