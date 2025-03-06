@@ -7,6 +7,10 @@
     --green: #1ed760;
     --white: #fff;
 
+    --spacing-1: 0.5rem;
+    --spacing-2: 1rem;
+    --spacing-3: 1.5rem;
+
     --transition: all 0.3s ease;
 }
 
@@ -37,6 +41,14 @@ body {
     color: var(--white);
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
 .bg-light {
     background-color: var(--black-light);
 }
@@ -45,31 +57,35 @@ body {
     display: flex;
 }
 
-.m-1 {
-    margin: 0.5rem;
+.item-center {
+    align-items: center;
 }
 
-.m-2 {
-    margin: 1rem;
+.justify-center {
+    justify-content: center;
 }
 
-.p-1 {
-    padding: 0.5rem;
+.justify-between {
+    justify-content: space-between;
 }
 
-.p-2 {
-    padding: 1rem;
+.radius {
+    border-radius: 5px;
+}
+
+.invert {
+    filter: invert(1);
 }
 
 .main-container {
     height: 100%;
     width: 100%;
+    padding: calc(var(--spacing-1) + 2px);
     gap: 5px;
 }
 
 .left, .right {
     height: 100%;
-    border-radius: 5px;
 }
 
 .left {
@@ -78,4 +94,86 @@ body {
 
 .right {
     width: 75%;
+}
+
+.home {
+    height: 115px;
+    margin-bottom: calc(var(--spacing-1) + 2px);
+    padding: calc(var(--spacing-1) + 2px);
+}
+
+.logo {
+    margin-bottom: var(--spacing-1);
+}
+
+.logo img {
+    width: 80px;
+}
+
+.nav li {
+    padding-top: var(--spacing-1);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.library {
+    height: calc(100% - 125px);
+    padding: calc(var(--spacing-1) + 2px);
+}
+
+.heading {
+    height: 40px;
+    gap: 8px;
+}
+
+.heading h2 {
+    font-size: 22px;
+}
+
+.playlist {
+    height: calc(100% - 80px);
+    overflow-y: auto;
+    padding: var(--spacing-1);
+}
+
+.song-list .list-item {
+    width: 100%;
+    border: 1px solid var(--white);
+    padding: var(--spacing-1);
+    margin-bottom: var(--spacing-1);
+    cursor: pointer;
+}
+
+.song-list .song-img {
+    width: 30px;
+}
+
+.song-list .song-info {
+    width: calc(100% - 120px);
+    padding: 0 var(--spacing-1);
+    font-size: 15px;
+}
+
+.song-info .song-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.song-list .play-now {
+    width: 90px;
+    font-size: 14px;
+    gap: 4px;
+}
+
+
+.footer {
+    height: 40px;
+    flex-wrap: wrap;
+    column-gap: var(--spacing-2);
+}
+
+.footer a {
+    color: var(--gray-dark);
+    font-size: 10px;
 }
