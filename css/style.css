@@ -236,7 +236,6 @@ a {
     width: 100%;
     height: calc(100% - 155px);
     padding: var(--spacing-1) var(--spacing-2);
-    overflow-y: auto;
 }
 
 .playlist-container h2 {
@@ -250,22 +249,53 @@ a {
     padding: var(--spacing-1) 0;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: auto;
 }
 
 .card {
     background-color: var(--gray-dark);
     width: 160px;
-    height: 245px;
+    height: 235px;
     padding: var(--spacing-1);
+    cursor: pointer;
 }
 
 .card-img {
     text-align: center;
     margin-bottom: var(--spacing-1);
+    position: relative;
 }
 
 .card-img img {
     border-radius: 5px;
+    z-index: 1;
+}
+
+.card-img .paly-now-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.card:hover .paly-now-icon {
+    bottom: 10px;
+    opacity: 1;
+}
+
+.card-img .paly-now-icon img {
+    width: 16px;
+    height: 16px;
 }
 
 .card-text h3 {
@@ -292,12 +322,35 @@ a {
     font-size: 14px;
 }
 
+.song-play-detail .song-name {
+    width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .time-vol {
     gap: 10px;
 }
 
 .volume {
     gap: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.volume input {
+    width: 100px;
+    position: absolute;
+    top: -70px;
+    left: -40px;
+    transform: rotate(-90deg);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.volume:hover input {
+    opacity: 1;
 }
 
 .seekbar {
