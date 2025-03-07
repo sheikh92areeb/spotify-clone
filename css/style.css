@@ -80,7 +80,7 @@ a {
 .main-container {
     height: 100%;
     width: 100%;
-    padding: calc(var(--spacing-1) + 2px);
+    padding: calc(var(--spacing-1) + 2px) 0;
     gap: 5px;
 }
 
@@ -393,7 +393,20 @@ a {
     height: 30px;
 }
 
+.close {
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
+    .left {
+        width: 300px;
+    }
+    .right {
+        width: calc(100% - 300px);
+    }
+}
+
+@media screen and (max-width: 990px) { 
     .main-container {
         position: relative;
         padding: unset;
@@ -411,5 +424,38 @@ a {
 
     .hamburger {
         display: block;
+    }
+    .close {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .song-play-detail .song-name {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .song-play-detail .song-name {
+        width: 100px;
+    }
+
+    .card-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 230px;
+    }
+
+    .card-img img {
+        width: 200px;
+        height: 150px;
+        object-fit: contain;
     }
 }
