@@ -392,3 +392,24 @@ a {
     width: 30px;
     height: 30px;
 }
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        position: relative;
+        padding: unset;
+    }
+    .left {
+        background-color: var(--body-color);
+        position: absolute;
+        left: -100%;
+        z-index: 9999;
+        transition: var(--transition);
+    }
+    .right {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
