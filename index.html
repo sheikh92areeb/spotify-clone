@@ -84,9 +84,53 @@
                 </div>
             </div>
 
-            <div class="playlist-container"></div>
+            <div class="playlist-container">
+                <h2>Spotify Playlist</h2>
+                <div class="card-container">
+                    <div class="card radius">
+                        <div class="card-img">
+                            <img src="img/cover.jpg" alt="Album Cover" width="140" height="140">
+                        </div>
+                        <div class="card-text">
+                            <h3 class="album-name">Album name</h3>
+                            <p class="description">
+                                Your daily update of the most played tracks right now.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="playbar-container"></div>
+            <div class="playbar-container">
+                <div class="song-play-detail d-flex justify-between">
+                    <div class="song-name">Song name</div>
+                    <div class="time-vol d-flex item-center">
+                        <div class="song-duration">00:00 / 00:00</div>
+                        <div class="volume d-flex item-center">
+                            <img class="invert" src="img/volume.svg" alt="volume icon" width="20" height="20">
+                            <input type="range" value="10">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+
+                <div class="control-btns d-flex justify-center item-center">
+                    <div class="previous">
+                        <img class="invert" src="img/prevsong.svg" alt="previous icon">
+                    </div>
+
+                    <div class="play">
+                        <img class="invert" src="img/circle-play-regular.svg" alt="play icon">
+                    </div>
+
+                    <div class="next">
+                        <img class="invert" src="img/nextsong.svg" alt="next icon">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
