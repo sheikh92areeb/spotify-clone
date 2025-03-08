@@ -9,7 +9,6 @@
 
     --spacing-1: 0.5rem;
     --spacing-2: 1rem;
-    --spacing-3: 1.5rem;
 
     --transition: all 0.3s ease;
 }
@@ -167,7 +166,6 @@ a {
     gap: 4px;
 }
 
-
 .footer {
     height: 40px;
     flex-wrap: wrap;
@@ -185,8 +183,6 @@ a {
     height: 45px;
     padding: 0 var(--spacing-2);
 }
-
-
 
 .left-btns, .arrow-btns {
     gap: 5px;
