@@ -1,0 +1,5 @@
+# Enable directory listing for /songs/ folder
+/songs/  /songs/index.html  200
+
+# Redirect all requests to the index.html (useful for SPAs)
+/*  /index.html  200
