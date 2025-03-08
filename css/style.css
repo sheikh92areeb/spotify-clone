@@ -359,6 +359,7 @@ a {
     background-color: var(--white);
     margin: auto;
     position: relative;
+    cursor: pointer;
 }
 
 .circle {
@@ -437,6 +438,9 @@ a {
 @media screen and (max-width: 570px) {
     .song-play-detail .song-name {
         width: 200px;
+    }
+    .card-container {
+        justify-content: center;
     }
 }
 
